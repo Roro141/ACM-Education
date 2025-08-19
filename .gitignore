@@ -1,10 +1,21 @@
-# Ignore virtual environment
-venv/
+# Dependencies
+node_modules/
 
-# Ignore Python cache
-__pycache__/
-*.pyc
+# Build output
+dist/
 
-# Ignore system files
-.DS_Store
-Thumbs.db
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp

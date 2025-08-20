@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
 const Login = lazy(() => import("./pages/Login"));
+const MentorView = lazy(() => import("./pages/MentorView"));
+const MenteeView = lazy(() => import("./pages/MenteeView"));
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/mentee" element={<MenteeView />} />
+          <Route path="/mentor" element={<MentorView />} />
         </Routes>
       </Suspense>
     </Router>
